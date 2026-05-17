@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -eq 0 ]]; then
+  echo "Usage: tools/hermes-x \"検索したい内容\""
+  exit 64
+fi
+
+PROMPT="$*"
+
+/Users/kawamurafuushin/.local/bin/hermes -z \
+  "Xで次のテーマを検索し、関連度が高い投稿を5件返してください。各行は「タイトル / 1文要約 / URL」の形式で日本語出力してください: ${PROMPT}" \
+  -t x_search

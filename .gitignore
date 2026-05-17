@@ -1,0 +1,41 @@
+# 認証情報（絶対にコミットしない）
+.env
+.env.*
+auth.json
+credentials.*
+*.token
+
+# Hermes認証（外部）
+# ~/.hermes/auth.json は別管理
+
+# 生成物（大容量ファイル）
+assets/
+*.mp4
+*.mp3
+*.ogg
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# 下書き（個人用）
+drafts/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
